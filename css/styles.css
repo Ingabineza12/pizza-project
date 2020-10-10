@@ -1,0 +1,24 @@
+nav{
+    margin:0 auto;
+    padding: 10px 0;
+    margin-right: 0%;
+}
+ul{
+    text-align: right;
+}
+li{
+    display: inline-block;
+    font-size: small;
+}
+nav>ul>li>a{
+    padding:30px;
+    margin-right: 0;
+    text-transform: uppercase;
+    text-decoration:none;
+    display: block;
+    color: black;
+}
+nav>ul>li>a:hover{
+    background-color: rgba(14, 27, 61, 0.678);
+    color: rgba(179, 192, 184, 0.7)
+}
