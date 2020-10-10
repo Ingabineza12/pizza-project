@@ -11,9 +11,9 @@
     <div class="container">
       <div class = "header-img">
         <div id="navigation">
-         <nav>
+         <nav> 
             <ul>
-              <li><a href="#home">Home</a></li>
+              <img id="chef" height="300px" width="300px" src="img/chef.jpeg">
               <li><a href="#about">About</a></li>
               <li><a href="#menu">Menu</a></li>
               <li><a href="#order">Order</a></li>
@@ -22,10 +22,198 @@
          </nav>
         </div>
 
-        <h1 id="home">Pizza Taste</h1>
-        <h6 id="menu">Menu</h6>
+        <h1 id="logoname">Pizza Taste</h1>
+      </div> <!-- this is for headerbgimage -->
+
+        <div class="Menu">
+          <h4 id="menu">Menu</h4></br>
+          <div class="images1">
+
+              <div class="col-md-3" id="w1">
+                  <img id="img1" width="200px" height="200px" src="img/berry.jpeg">
+                  <h6> Berry pizza</h6>
+              </div>
+
+              <div class="col-md-3" id="w2">
+                  <img id="img2" width="200px" height="200px" src="img/macaroni.jpeg">
+                  <h6> Macaroni & cheese pizza</h6>
+              </div>
+
+              <div class="col-md-3" id="w3">
+                  <img id="img3" width="200px" height="200px" src="img/buffalo.jpeg">
+                  <h6> Buffalo chicken pizza</h6>
+              </div>
+
+              <div class="col-md-3" id="w4">
+                  <img id="img4" width="200px" height="200px" src="img/brown.jpeg">
+                  <h6> Brown butter & spinach pizza</h6>
+              </div>
+          </div> <!-- this is for image1 -->
+
+          <div class="images2">
+
+              <div class="col-md-3" id="w5">
+                      <img id="img5" width="200px" height="200px" src="img/turkish.jpeg">
+                      <h6> Turkish ground-lamb pizza</h6> 
+              </div>
+
+              <div class="col-md-3" id="w6">
+                      <img id="img6" width="200px" height="200px" src="img/sushi.jpeg"> 
+                      <h6> Sushi rice and tofu pizza</h6>
+              </div>
+
+              <div class="col-md-3" id="w7">
+                  <img id="img7" width="200px" height="200px" src="img/burrata.jpeg">
+                  <h6> Burrata and zucchini pizza</h6>
+              </div>
+
+              <div class="col-md-3" id="w8">
+                  <img id="img8" width="200px" height="200px" src="img/italiana.jpg">
+                  <h6> Italiana pizza</h6>
+              </div>
+              
+          </div>   <!-- this is for images2 -->            
+        </div>  <!-- this is for menu class -->
+
+      </br></br></br>
+      <div class="row">
+        <div class="col-md-6" id="order" > 
+           
+          <h3>Make your order</h3>
+          <br>
+                                     
+      <form id="new-pizz">
+
+        <div class="form-group">                     
+          <label for="size"><strong>Pizza Size: </strong></label>
+          <select class="form-control newsize" id="new-size" value="size" style="background:transparent">
+              <option  id="la">Large</option>
+              <option  id="med">Medium</option>
+              <option  id="sma">Small</option>
+           
+           </select>
+        </div> </br>                                 
+                            
+                                
+                      <div class="form-group">
+                        <label for="new-crust"><strong>Choose your Crust:</strong></label>
+                <select class="form-control new-crust" id="new-crust"  style="background:transparent">
+                    <option  id="crust">crispy</option>
+                    <option  id="crust">Cheese stuffed Crust </option>
+                    <option  id="crust">Gluten-free Crust</option>
+                    <option  id="crust">Thin Crust</option>
+                    <option  id="crust">Flat bread Crust</option>
+                      
+                 </select>
+                </div>
+              </br>
+              
+              <div class="form-group">
+                <label for="new-topping"><strong>The Toppings :</strong></label>
+                <select class="form-control new-topping" id="new-topping"  style="background:transparent">
+                        <option  id="crust">mushrooms </option>
+                        <option  id="crust">Sausage </option>
+                        <option  id="crust"> Onions</option>
+                        <option  id="crust"> Green pepper </option>
+                        <option  id="crust"> cheese </option>
+                        </select>
+              </div>  
+
+              </br>
+              <div class="form-group">
+                <label for="type-pizza"><strong>Charges on each pizza :   </strong></label>
+             <select class="form-control newType" id="type" value="type" style="background:transparent" >
+            <option  id="berry">Berry pizza 7000rwf</option>
+            <option  id="macaroni">Macaroni pizza 5500rwf</option>
+            <option  id="buffalo">Buffalo pizza 6000rwf</option>
+            <option id="brown">Brown butter pizza 8000rwf</option>
+            <option  id="turkish">turkish pizza 12000rwf</option>
+            <option  id="sushi">sushi rice pizza 7500rwf</option>
+            <option  id="burrata">Burrata pizza 9000rwf</option>
+            <option  id="italiana">italiana pizza 14000rwf</option>
+                 
+         </select>
+        </div> 
+         
+        <br>
+        <div id="new-pizzas">
+          <div class="new-pizza">
+              <div class="form-group">
+                <label for="new-number"><strong>Number of Pizza:</strong></label>
+                <input type="number" min="1" id="numbers" class="form-control new-number" style="background:transparent">
+              </div>
+          </div>
+        </div>
+
+        <br>
+        <span class="btn btn-success" id="delivery" onclick="send()">Delivery</span>
+        <span class="btn btn-success" id="add-address">Add another order</span>
+        <button class="btn btn-success" type="submit" class="btn">see order made</button>
         
-      </div>
+      </form>          
+      </div><!-- this is for order -->  
+ 
+        <div class="col-md-6">
+          <div id="show-your-order">
+            <br><br>
+          <p><strong>Size of Pizza :<span class="pizza-size"></span></strong></p>
+          <p><strong>Type of Pizza :<span class="pizza-type"></span></strong></p>
+          <p><strong>Number of Pizza:<span class="pizza-number"></span></strong></p>
+          <p><strong>Favorite  Pizza:<span class="pizza-favor"></span></strong></p>                   
+          <p><strong>The Topping :<span class="pizza-local"></span> </strong></p>
+          <p><strong>Total Price:   <span class="total-price"></span></strong></p>
+          
+          <ul id="your">
+
+          </ul>
+          
+          </div>
+        </div> <!-- this is for show order --> 
+
+      </div> <!-- closing row -->   
+      
+    
+        
+        
+      <h4 id="about">About Us</h4></br>
+       
+        
+            <p id="aboutPara"> <strong>Pizza Taste</strong> is your number one solution if you are looking for 
+        the best pizza that are delivered in town near you.
+      With <strong>Pizza Taste</strong> we welcome you to a world of deliciousness by making good-tasting and good-looking pizzas 
+      depending on your order.
+       Don't hesitate to contact us anytime. we are here for you.</p>
+      
+       <br><br>
+      
+    <div id= "contacts">
+    <h4 >Contacts</h4></br>
+      
+      <div class="social">
+        <div class="col-md-3">
+            <img height="30px" width="30px" src="img/twitter.png">
+        </div>
+        
+        <div class="col-md-3">
+            <img height="30px" width="30px" src="img/facebook.png">
+        </div>
+        <div class="col-md-3">
+            <img height="30px" width="30px"src="img/skype.png">
+        </div>
+        
+        <div class="col-md-3">
+            <img height="30px" width="30px" src="img/pinterest.png">
+        </div>
+
+    </div>
+    <div class="endings">
+        <br>
+        <p><strong>Deborah M. INGABIRE</strong></p>
+        <p>&#169;Copyright 2020</p>
+    </div>
+    </div>
+    </div>
+
     </div>
   </body>
   </html>

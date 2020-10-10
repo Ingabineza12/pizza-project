@@ -1,3 +1,19 @@
+.header-img{
+    /* background-image:url('../img/bgImgHeader.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    height: 530px;
+    width:100%;
+    background-color: rgb(105, 29, 37);
+    color: beige;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family:serif;
+
+}
+
+
+
 nav{
     margin:0 auto;
     padding: 10px 0;
@@ -16,9 +32,84 @@ nav>ul>li>a{
     text-transform: uppercase;
     text-decoration:none;
     display: block;
-    color: black;
+    color: beige;
 }
 nav>ul>li>a:hover{
     background-color: rgba(14, 27, 61, 0.678);
     color: rgba(179, 192, 184, 0.7)
 }
+
+.images1, .images2{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left:15px;
+}
+
+#logoname{
+    text-align: center;
+    font-weight: 400;
+    font-family: monospace;
+    font-style: initial;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+#chef{
+    margin-right: 170px;
+}
+#menu{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+}
+.row{
+    background-image:url('../img/bgImgOrder.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    background-color:transparent;
+    height: 700px;
+}
+#show-your-order{
+    margin-left: 60px;
+}
+.social{
+    display: flex;
+    align-content: space-around;
+   margin-top: 40px;
+   margin-bottom: 30px;
+
+} 
+
+.endings{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Times New Roman;
+    text-transform: uppercase;
+}
+
+#contacts{
+    background-color: rgb(105, 29, 37);
+    color: beige;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+#about{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-style: italic;
+}
+ #aboutPara{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+} 
