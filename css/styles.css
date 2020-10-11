@@ -66,14 +66,11 @@ nav>ul>li>a:hover{
     font-style: italic;
 }
 .container{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/Pizza1.png');
-    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/Pizza1.png'); 
+    background-size: contain;
     background-repeat: no-repeat;
     color:white;
-    height: 1450px;
-    width: 100%;
-    padding-left: 40px;
-    padding-top: 30px;
+    
 }
 #show-your-order{
     margin-left: 120px;
