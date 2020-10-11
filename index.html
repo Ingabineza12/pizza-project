@@ -136,7 +136,7 @@
               </div>
             </br>
               <div class="form-group">
-                <label for="type-pizza"><strong>Types of pizza-favor :   </strong></label>
+                <label for="type-pizza"><strong>Types of pizza flavour :   </strong></label>
              <select class="form-control newType" id="type" value="type" style="background:transparent" >
             <option  id="berry">Berry pizza </option>
             <option  id="macaroni">Macaroni pizza </option>
@@ -152,12 +152,6 @@
          
     
         <!-- <div id="new-pizzas">  -->
-          <div class="new-pizza">
-              <div class="form-group">
-                <label for="new-number"><strong>Number of Pizza:</strong></label>
-                <input type="number" min="1" id="numbers" class="form-control new-number" style="background:transparent">
-              </div>
-          </div>
           <div class="deliver"> 
             <label for="delivery"><strong>Want it to be delivered:</strong></label>
 
@@ -174,7 +168,7 @@
         <br>
         <span class="btn btn-success" id="delivery" onclick="send()">Want delivery</span>
         <span class="btn btn-success" id="add-order">Add another order</span>
-        <button class="btn btn-info" type="submit" class="btn">see orders made</button>
+        <button class="btn btn-info" id="see-order" type="submit" class="btn">see orders made</button>
         
       </form>          
       </div><!-- this is for order -->  
@@ -185,11 +179,10 @@
           <p><strong>Size of Pizza :<span class="pizza-size"></span></strong></p>
           <p><strong>Favorite  crust:<span class="pizza-favor"></span></strong></p> 
           <p><strong>The Topping :<span class="pizza-local"></span> </strong></p> 
-          <p><strong>Type of Pizza and charge :<span class="pizza-type"></span></strong></p>
-          <p><strong>Number of Pizza:<span class="pizza-number"></span></strong></p>
+          <p><strong>Pizza flavour :<span class="pizza-type"></span></strong></p>
                            
           
-          <p><strong>Total Price:   <span class="total-price"></span></strong></p>
+          <p><strong>Total Price: <span class="total-price"></span></strong></p>
           
           <ul id="your">
 
