@@ -67,8 +67,8 @@ nav>ul>li>a:hover{
     font-size: 40px;
 }
 .container{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/Pizza1.png'); 
-    background-size: contain;
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url('../img/Pizza1.png'); 
+    background-size: cover;
     background-repeat: no-repeat;
     color:white;
     
