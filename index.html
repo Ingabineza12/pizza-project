@@ -121,7 +121,7 @@
               </div></br>
               
               <div class="form-group">
-                <label for="new-topping"><strong>The Toppings :</strong></label>
+                <!-- <label for="new-topping"><strong>The Toppings :</strong></label>
                 <select class="form-control new-topping" id="pizza-topping"  style="background:transparent" >
                         <option>choose topping...</option>
                         <option  id="crust">mushrooms   1000rwf </option>
@@ -129,11 +129,24 @@
                         <option  id="crust"> Onions   500rwf</option>
                         <option  id="crust"> Green   pepper 1000rwf </option>
                         <option  id="crust"> cheese   2000rwf</option>
-                        </select>
-              </div>  </br>
+                        </select>-->
+                        <label for="new-topping"><strong>The Toppings :</strong></label><br>
+
+                          <input type="checkbox" id="crust" name="crust1" value="mushrooms">
+                          <label for="crust1"> mushrooms 1000rwf</label><br>
+                          <input type="checkbox" id="crust" name="crust2" value="Sausage">
+                          <label for="crust2"> Sausage 4000rwf</label><br>
+                          <input type="checkbox" id="crust" name="crust3" value="Onions">
+                          <label for="crust3"> Onions 500rwf</label><br>
+                          <input type="checkbox" id="crust" name="crust4" value="Green pepper">
+                          <label for="crust4"> Green pepper 1000rwf</label><br>
+                          <input type="checkbox" id="crust" name="crust5" value="Cheese">
+                          <label for="crust5"> cheese 2000rwf</label><br>
+              </div>  </br> 
+
 
               <div>
-                <label for="toppings-charges"> Charges of the choosen Topping</label>
+                <label for="toppings-charges"> Charges of the choosen Toppings</label>
                 <input id="toppings-charges" type="number" min="0" style="background:transparent" >
               </div></br>
               
