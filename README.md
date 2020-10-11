@@ -13,7 +13,7 @@ HTML , CSS && JAVASCRIPT
 you need an internet a github account to access it and now you can clone it to your local machine and run it in your editor
 
 ## Link to live page
-
+ https://ingabineza12.github.io/pizza-project/
 
 ## Licence
 This project is licenced under MIT License
