@@ -64,6 +64,7 @@ nav>ul>li>a:hover{
     margin-bottom: 30px;
     text-align: center;
     font-style: italic;
+    font-size: 40px;
 }
 .container{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/Pizza1.png'); 
@@ -107,6 +108,7 @@ nav>ul>li>a:hover{
     margin-bottom: 15px;
     text-align: center;
     font-style: italic;
+    font-size: 40px;
 }
  #aboutPara{
     margin-top: 60px;
