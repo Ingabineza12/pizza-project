@@ -2,7 +2,7 @@
     /* background-image:url('../img/bgImgHeader.jpeg');
     background-size: cover;
     background-repeat: no-repeat; */
-    height: 510px;
+    height: 700px;
     width:100%;
     background-color: rgb(105, 29, 37);
     color: beige;
@@ -27,7 +27,7 @@ li{
     font-size: small;
 }
 nav>ul>li>a{
-    padding:30px;
+    padding:25px;
     margin-right: 0;
     text-transform: uppercase;
     text-decoration:none;
@@ -52,12 +52,12 @@ nav>ul>li>a:hover{
     font-weight: 400;
     font-family: monospace;
     font-style: initial;
-    margin-top: 70px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 70px;
+    font-size: 100px;
 }
 #chef{
-    margin-right: 220px;
+    margin-right: 250px;
 }
 #menu{
     margin-top: 60px;
@@ -66,12 +66,13 @@ nav>ul>li>a:hover{
     font-style: italic;
 }
 .row{
-    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5z5r8rRBpCeYlT-vdo8MQ5H8lVtv5EUyvGg&usqp=CAU');
+    background-image:url('../img/Asset\ 2.png');
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
     background-color:transparent;
-    height: 900px;
+    height: 1000px;
+    width: 1000px;
     margin-left: 90px;
     margin-right: 90px;
 }

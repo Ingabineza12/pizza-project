@@ -1,3 +1,20 @@
+///////////////delivery button
+$(function(){
+    $("#delivery").click(function(event){
+        event.preventDefault();
+      
+        prompt("Enter the location to deliver to:");
+    });
+})
+
+
+
+
+
+
+
+////////////////////////////// To see order button
+
 $(function(){
     $("#see-order").click(function(event){
         event.preventDefault();
