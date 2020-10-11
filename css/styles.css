@@ -65,13 +65,12 @@ nav>ul>li>a:hover{
     text-align: center;
     font-style: italic;
 }
-.row{
-    background-image:url('../img/Pizza1.png');
+.container{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/Pizza1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: transparent;
     color:white;
-    height: 1000px;
+    height: 1450px;
     width: 100%;
     padding-left: 40px;
     padding-top: 30px;

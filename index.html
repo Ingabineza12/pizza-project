@@ -75,6 +75,8 @@
         </div>  <!-- this is for menu class -->
 
       </br></br></br>
+
+      <div class="container">
       <div class="row">
         <div class="col-md-6" id="order" > 
            
@@ -85,7 +87,7 @@
 
       <div id="new-pizzas">  <!-- make them display again -->
 
-        <div class="form-group">                     
+          <div class="form-group">                     
           <label for="size"><strong>Pizza Size: </strong></label>
           <select class="form-control newsize" id="pizza-size" value="size" style="background:transparent" >
               <option >choose size...</option>
@@ -94,12 +96,11 @@
               <option  id="sma">Small   1000rwf</option>
            
            </select>
-        </div> </br>  
-        <div>
+         </div> </br>  
+         <div>
           <label for="size-charges"> Charges of the choosen size</label>
           <input id="size-charges" type="number" min="0" style="background:transparent">
-        </div>
-       </br>                               
+         </div></br>                               
                             
                                 
                       <div class="form-group">
@@ -112,14 +113,12 @@
                     <option  id="crust">Thin Crust   8000rwf</option>
                     <option  id="crust">Flat bread Crust   9000rwf</option>     
                  </select>
-                </div>
-              </br>
+                </div></br>
 
               <div>
                 <label for="crust-charges"> Charges of the choosen crust</label>
                 <input id="crust-charges" type="number" min="0" style="background:transparent" >
-              </div>
-            </br>
+              </div></br>
               
               <div class="form-group">
                 <label for="new-topping"><strong>The Toppings :</strong></label>
@@ -131,13 +130,13 @@
                         <option  id="crust"> Green   pepper 1000rwf </option>
                         <option  id="crust"> cheese   2000rwf</option>
                         </select>
-              </div>  
-              </br>
+              </div>  </br>
+
               <div>
                 <label for="toppings-charges"> Charges of the choosen Topping</label>
                 <input id="toppings-charges" type="number" min="0" style="background:transparent" >
-              </div>
-            </br>
+              </div></br>
+              
               <div class="form-group">
                 <label for="type-pizza"><strong>Types of pizza flavour :   </strong></label>
              <select class="form-control newType" id="pizza-flavour" value="type" style="background:transparent" >
@@ -152,22 +151,22 @@
             <option  id="italiana">italiana pizza</option>
                  
          </select>
-        </div> 
+         </div> 
          
     
-        <!-- <div id="new-pizzas">  -->
+         <!-- <div id="new-pizzas">  -->
           <div class="deliver"> 
             <label for="delivery"><strong>Want it to be delivered:</strong></label>
 
-            <input type="radio" id="Yes" name="Deliver" value="Yes" onclick="alert('Charges on delivery are 1000Rwf')" >
+            <input type="radio" id="Yes" name="Deliver" value="Yes" onclick= "alert('Charges on delivery are 1000Rwf')" >
             <label for="yes">Yes</label>
 
             <input type="radio" id="No " name="Deliver" value="No">
             <label for="no">No</label><br>
           </div>
+        </div> <!--  ends here -->
 
-
-    </div> 
+      
 
         <br>
         <span class="btn btn-success" id="delivery" onclick="send()">Where to deliver</span>
@@ -197,7 +196,7 @@
 
       </div> <!-- closing row -->   
       
-    
+    </div> <!-- container endings -->
         
         
       <h4 id="about">About Us</h4></br>

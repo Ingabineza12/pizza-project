@@ -10,11 +10,98 @@ $(function(){
 
 ////////////////////////////// add another order button
 $(function(){
-    $("#add-order").click(function(event){
-        event.preventDefault();
-
+    $("#add-order").click(function(){
+        $("#new-pizzas").append('<div id="new-pizzas">' +
+        '<div class="form-group">' + 
+        '<label for="size"><strong>Pizza Size: </strong></label>' + 
+        '<select class="form-control newsize" id="pizza-size" value="size" style="background:transparent" >' + 
+        '<option >choose size...</option>' + 
+        '<option  id="la">Large   4000rwf</option>' +
+        '<option  id="med">Medium   2000rwf</option>' +
+        '<option  id="sma">Small   1000rwf</option>'+
+        ' </select>'+
+        '</div> </br> '+
+        '<div>'+
+        '<label for="size-charges"> Charges of the choosen size</label>'+
+        '<input id="size-charges" type="number" min="0" style="background:transparent">'+
+        '</div></br>'+
+        '<div class="form-group">'+
+        '<label for="new-crust"><strong>Choose your Crust:</strong></label>'+
+        '<select class="form-control new-crust" id="pizza-crust"  style="background:transparent" >'+
+        '<option>choose crust...</option>'+
+        'option  id="crust">crispy   10000rwf</option>'+
+        '<option  id="crust">Cheese stuffed Crust   6000 rwf </option>'+
+        '<option  id="crust">Gluten-free Crust   7000rwf</option>'+
+        '<option  id="crust">Thin Crust   8000rwf</option>'+
+        '<option  id="crust">Flat bread Crust   9000rwf</option>'+
+        '</select>'+
+        '</div></br>'+
+        '<div>'+
+        '<label for="crust-charges"> Charges of the choosen crust</label>'+
+        '<input id="crust-charges" type="number" min="0" style="background:transparent" >'+
+        '</div></br>'+
+        '<div class="form-group">'+
+        '<label for="new-topping"><strong>The Toppings :</strong></label>'+
+        '<select class="form-control new-topping" id="pizza-topping"  style="background:transparent" >'+
+        '<option>choose topping...</option>'+
+        '<option  id="crust">mushrooms   1000rwf </option>'+
+        '<option  id="crust">Sausage   4000rwf</option>'+
+        '<option  id="crust"> Onions   500rwf</option>'+
+        '<option  id="crust"> Green   pepper 1000rwf </option>'+
+        '<option  id="crust"> cheese   2000rwf</option>'+
+        '</select>'+
+        '</div>  </br>'+
+        '<div>'+
+        '<label for="toppings-charges"> Charges of the choosen Topping</label>'+
+        '<input id="toppings-charges" type="number" min="0" style="background:transparent" >'+
+        ' </div></br>'+
+        '<div class="form-group">'+
+        '<label for="type-pizza"><strong>Types of pizza flavour :   </strong></label>'+
+        '<select class="form-control newType" id="pizza-flavour" value="type" style="background:transparent" >'+
+        '<option>choose flavour...</option>'+
+        '<option  id="berry">Berry pizza </option>'+
+        '<option  id="macaroni">Macaroni pizza </option>'+
+        '<option  id="buffalo">Buffalo pizza </option>'+
+        '<option id="brown">Brown butter pizza </option>'+
+        '<option  id="turkish">turkish pizza </option>'+
+        '<option  id="sushi">sushi rice pizza </option>'+
+        '<option  id="burrata">Burrata pizza </option>'+
+        '<option  id="italiana">italiana pizza</option>'+
+        '</select>'+
+        '</div>'+
+        '<div class="deliver"> '+
+        '<label for="delivery"><strong>Want it to be delivered:</strong></label>'+
+        '<input type="radio" id="Yes" name="Deliver" value="Yes" onclick="alert("Charges on delivery are 1000Rwf")" >'+
+        '<label for="yes">Yes</label>'+
+        '<input type="radio" id="No " name="Deliver" value="No">'+
+        '<label for="no">No</label><br>'+
+        '</div>'+
+        ' </div>');
     });
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,7 +164,7 @@ Orderprice.prototype.output = function(temp)
 };
 
 
-// constructor and prototypes of the add new order
+// constructor and prototypes to display the entered order
 function Order(pizzaSize, pizzaCrust, pizzaTopping , pizzaFlavour) {
 
     this.size = pizzaSize;
