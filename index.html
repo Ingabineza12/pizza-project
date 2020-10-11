@@ -87,57 +87,61 @@
 
         <div class="form-group">                     
           <label for="size"><strong>Pizza Size: </strong></label>
-          <select class="form-control newsize" id="new-size" value="size" style="background:transparent">
-              <option  id="la">Large 4000rwf</option>
-              <option  id="med">Medium 2000rwf</option>
-              <option  id="sma">Small 1000rwf</option>
+          <select class="form-control newsize" id="pizza-size" value="size" style="background:transparent" >
+              <option >choose size...</option>
+              <option  id="la">Large   4000rwf</option>
+              <option  id="med">Medium   2000rwf</option>
+              <option  id="sma">Small   1000rwf</option>
            
            </select>
         </div> </br>  
         <div>
           <label for="size-charges"> Charges of the choosen size</label>
-          <input id="size-charges" type="number" min="0">
+          <input id="size-charges" type="number" min="0" style="background:transparent">
         </div>
        </br>                               
                             
                                 
                       <div class="form-group">
                         <label for="new-crust"><strong>Choose your Crust:</strong></label>
-                <select class="form-control new-crust" id="new-crust"  style="background:transparent">
-                    <option  id="crust">crispy 10000rwf</option>
-                    <option  id="crust">Cheese stuffed Crust 6000 rwf </option>
-                    <option  id="crust">Gluten-free Crust 7000rwf</option>
-                    <option  id="crust">Thin Crust 8000rwf</option>
-                    <option  id="crust">Flat bread Crust 9000rwf</option>     
+                <select class="form-control new-crust" id="pizza-crust"  style="background:transparent" >
+                    <option>choose crust...</option>
+                    <option  id="crust">crispy   10000rwf</option>
+                    <option  id="crust">Cheese stuffed Crust   6000 rwf </option>
+                    <option  id="crust">Gluten-free Crust   7000rwf</option>
+                    <option  id="crust">Thin Crust   8000rwf</option>
+                    <option  id="crust">Flat bread Crust   9000rwf</option>     
                  </select>
                 </div>
               </br>
 
               <div>
                 <label for="crust-charges"> Charges of the choosen crust</label>
-                <input id="crust-charges" type="number" min="0">
+                <input id="crust-charges" type="number" min="0" style="background:transparent" >
               </div>
             </br>
               
               <div class="form-group">
                 <label for="new-topping"><strong>The Toppings :</strong></label>
-                <select class="form-control new-topping" id="new-topping"  style="background:transparent">
-                        <option  id="crust">mushrooms 1000rwf </option>
-                        <option  id="crust">Sausage 4000rwf</option>
-                        <option  id="crust"> Onions 500rwf</option>
-                        <option  id="crust"> Green pepper 1000rwf </option>
-                        <option  id="crust"> cheese 2000rwf</option>
+                <select class="form-control new-topping" id="pizza-topping"  style="background:transparent" >
+                        <option>choose topping...</option>
+                        <option  id="crust">mushrooms   1000rwf </option>
+                        <option  id="crust">Sausage   4000rwf</option>
+                        <option  id="crust"> Onions   500rwf</option>
+                        <option  id="crust"> Green   pepper 1000rwf </option>
+                        <option  id="crust"> cheese   2000rwf</option>
                         </select>
               </div>  
               </br>
               <div>
                 <label for="toppings-charges"> Charges of the choosen Topping</label>
-                <input id="toppings-charges" type="number" min="0">
+                <input id="toppings-charges" type="number" min="0" style="background:transparent" >
               </div>
             </br>
               <div class="form-group">
                 <label for="type-pizza"><strong>Types of pizza flavour :   </strong></label>
-             <select class="form-control newType" id="type" value="type" style="background:transparent" >
+             <select class="form-control newType" id="pizza-flavour" value="type" style="background:transparent" >
+            <option>choose flavour...</option>
             <option  id="berry">Berry pizza </option>
             <option  id="macaroni">Macaroni pizza </option>
             <option  id="buffalo">Buffalo pizza </option>
@@ -176,10 +180,10 @@
         <div class="col-md-6">
           <div id="show-your-order">
             <br><br>
-          <p><strong>Size of Pizza :<span class="pizza-size"></span></strong></p>
-          <p><strong>Favorite  crust:<span class="pizza-favor"></span></strong></p> 
-          <p><strong>The Topping :<span class="pizza-local"></span> </strong></p> 
-          <p><strong>Pizza flavour :<span class="pizza-type"></span></strong></p>
+          <p><strong>Size of Pizza  : <span class="size"></span></strong></p>
+          <p><strong>Favorite  crust  : <span class="crust"></span></strong></p> 
+          <p><strong>The Topping  : <span class="topping"></span> </strong></p> 
+          <p><strong>Pizza flavour : <span class="flavour"></span></strong></p>
                            
           
           <p><strong>Total Price: <span class="total-price"></span></strong></p>

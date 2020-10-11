@@ -66,18 +66,19 @@ nav>ul>li>a:hover{
     font-style: italic;
 }
 .row{
-    background-image:url('../img/Asset\ 2.png');
+    background-image:url('../img/Pizza1.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: transparent;
     color:white;
-    background-color:transparent;
     height: 1000px;
-    width: 1000px;
-    margin-left: 90px;
-    margin-right: 90px;
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 30px;
 }
 #show-your-order{
-    margin-left: 60px;
+    margin-left: 120px;
+    margin-top: 150px;
 }
 .social{
     display: flex;
@@ -119,3 +120,6 @@ nav>ul>li>a:hover{
     margin-left: 90px;
     margin-right: 90px;
 } 
+#size-charges, #crust-charges, #toppings-charges{
+    color:wheat;
+}
