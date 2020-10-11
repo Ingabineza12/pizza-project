@@ -81,7 +81,9 @@
           <h3>Make your order</h3>
           <br>
                                      
-      <form id="new-pizza">
+      <form id="form-order" >
+
+      <div id="new-pizzas">  <!-- make them display again -->
 
         <div class="form-group">                     
           <label for="size"><strong>Pizza Size: </strong></label>
@@ -96,7 +98,7 @@
           <label for="size-charges"> Charges of the choosen size</label>
           <input id="size-charges" type="number" min="0">
         </div>
-      </br>                               
+       </br>                               
                             
                                 
                       <div class="form-group">
@@ -149,19 +151,30 @@
         </div> 
          
     
-        <div id="new-pizzas"> 
+        <!-- <div id="new-pizzas">  -->
           <div class="new-pizza">
               <div class="form-group">
                 <label for="new-number"><strong>Number of Pizza:</strong></label>
                 <input type="number" min="1" id="numbers" class="form-control new-number" style="background:transparent">
               </div>
           </div>
-        </div> 
+          <div class="deliver"> 
+            <label for="delivery"><strong>Want it to be delivered:</strong></label>
+
+            <input type="radio" id="Yes" name="Deliver" value="Yes" onclick="alert('Charges on delivery are 1000Rwf')" >
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="No " name="Deliver" value="No">
+            <label for="no">No</label><br>
+          </div>
+
+
+    </div> 
 
         <br>
-        <span class="btn btn-success" id="delivery" onclick="send()">Delivery</span>
-        <span class="btn btn-success" id="add-address">Add another order</span>
-        <button class="btn btn-success" type="submit" class="btn">see orders made</button>
+        <span class="btn btn-success" id="delivery" onclick="send()">Want delivery</span>
+        <span class="btn btn-success" id="add-order">Add another order</span>
+        <button class="btn btn-info" type="submit" class="btn">see orders made</button>
         
       </form>          
       </div><!-- this is for order -->  
@@ -223,7 +236,7 @@
     </div>
     <div class="endings">
         <br>
-        <p><strong>Deborah M. INGABIRE</strong></p>
+        <p><strong>Deborah M. INGABIRE</strong></p> <br>
         <p>&#169;Copyright 2020</p>
     </div>
     </div>
